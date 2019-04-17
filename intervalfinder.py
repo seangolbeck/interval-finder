@@ -19,8 +19,13 @@ pitch_lists = {
   "Bb": ["Cb", "C", "Db", "D", "Eb", "E", "Fb", "F", "F#", "Gb", "G", "Ab", "A"],
   "B": ["C", "C#", "D", "D#", "E", "E#", "F", "F#", "Fx", "G", "G#", "A", "A#"]
 }
-pitch = input("use uppercase letter for pitch name '#' for sharp 'b' for flat    practical pitches only                                                           enter pitch:")
-interval = input("use lowercase 'm' for minor, uppercase 'M' for major, 'b' for flat symbol, '#' for sharp, 'P' for perfect                                              .....enter interval:")
+
+print("use uppercase letter for pitch name")
+print("'#' for sharp 'b' for flat    practical pitches only")
+pitch = input("enter pitch:")
+print("use lowercase 'm' for minor, uppercase 'M' for major") 
+print("'b' for flat symbol, '#' for sharp, 'P' for perfect")
+interval = input("enter interval:")
 shift = move.index(interval)
 print(pitch_lists[pitch][shift])
 
